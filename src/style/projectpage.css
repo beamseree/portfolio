@@ -1,0 +1,174 @@
+.project-page-container {
+    background-color: white;
+    padding: 80px 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.project-page-container.fade {
+    transform: translateY(70px);
+    opacity: 0;
+}
+
+.max-width-projects {
+    max-width: 1200px;
+}
+
+.products-padding {
+    width: 100%;
+    padding: 0 12vw;
+}
+
+.project-page-container * {
+
+    color: #121212;
+}
+
+.pp-hero {
+    padding-top: 100px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    /* align-items: center; */
+}
+
+.pp-hero-top,
+.pp-hero-bottom {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.pp-hero-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pp-title {
+    font-size: 100px;
+    font-family: NeueMontreal-R;
+}
+
+.breadcrumb {
+    font-family: NeueMontreal-L;
+    font-style: italic;
+    font-size: 100px;
+    margin-bottom: -10px;
+}
+
+.hero-bottom-title {
+    font-family: NeueMontreal-R;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.project-overview-text {
+    font-family: NeueMontreal-R;
+    font-size: 35px;
+}
+
+.pp-overview-container {
+    padding-right: 10%;
+    width: 60%;
+}
+
+.project-item-text {
+    font-family: NeueMontreal-R;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.pp-service-container,
+.pp-info-container {
+    width: 15%;
+}
+
+
+.pp-info {
+    margin-bottom: 20px;
+}
+
+.pp-body {
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 150px;
+    max-width: 1200px;
+}
+
+.pp-heading1 {
+    font-family: NeueMontreal-R;
+    /* font-style: italic; */
+    font-size: 70px;
+    margin-bottom: -70px;
+}
+
+.pp-heading2 {
+    font-size: 35px;
+    font-family: NeueMontreal-L;
+    font-style: italic;
+}
+
+.pp-img-half {
+    width: 60%;
+    border-radius: 10px;
+    border: 1px #121212 solid;
+}
+
+.image-with-title {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+}
+
+.sticky-two-col {
+    width: 100%;
+    /* height: 180vw; */
+    /* max-height: 3000px; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.sticky-container {
+    position:-webkit-sticky; 
+    position:sticky;
+    top: 20vh;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky-left-side {
+    width: 35%;
+    /* position: relative; */
+    z-index: 1;
+}
+
+.sticky-right-side {
+    width: 60%;
+    position: relative;
+    z-index: 0;
+}
+
+.pp-img-full {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.browser-inner {
+    /* top: 2.8vw; */
+    border-radius: 11px;
+    width: 100%;
+    border: 1px #121212 solid;
+}

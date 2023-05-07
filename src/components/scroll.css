@@ -1,0 +1,49 @@
+.container {
+  padding-left: 4vw;
+  padding-top: 45vh;
+  padding-bottom: 45vh;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  animation: show 1s forwards linear;
+  /* pointer-events: none; */
+}
+
+@keyframes show {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.textItem {
+  margin: 0;
+  padding: 0px 0px;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 85px;
+  line-height: 110%;
+  font-family: NeueMontreal-L;
+  border-radius: 5px;
+  position: relative;
+  transition: transform 0.25s ease;
+}
+
+.textItem:hover {
+  transform: scale(1.025);
+}
+
+
+.goTo {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: transparent;
+}

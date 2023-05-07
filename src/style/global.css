@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Gilroy-R;
+  src: url("../fonts/Gilroy-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeueMontreal-R;
+  src: url("../fonts/NeueMontreal-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NeueMontreal-L;
+  src: url("../fonts/NeueMontreal-Light.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: NeueMontreal-R;
+  box-sizing: border-box;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  background-color: white;
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
+.loader.fade {
+  transition: all 0.8s ease;
+  opacity: 0;
+}
+
+.loader.gone {
+  display: none;
+}
