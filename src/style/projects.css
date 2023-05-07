@@ -79,7 +79,6 @@
     align-items: center;
     margin-top: 39vh;
     opacity: 1;
-    transition: opacity 0.25s ease;
     color: #121212;
 }
 .project-sub {

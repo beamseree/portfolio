@@ -103,6 +103,16 @@ const Projects = (props) => {
     "Website",
   ];
 
+  const projectUrl = [
+    "Branding & Website",
+    "Branding & Website",
+    "Website",
+    "Branding",
+    "Branding & Website",
+    "Website",
+    "asos",
+  ];
+
   const buttonRef = useRef(null);
 
   useEffect(() => {
@@ -124,11 +134,10 @@ const Projects = (props) => {
 
   const handleProject = () => {
     //currentProjectRef.current = currentProject;
-    console.log(currentProjectRef.current);
     setTimeout(() => {
       // soundOnRef.current && whoosh.play();
         setTimeout(() => {
-            navigate("/projects/asos")
+            navigate("/projects/" + projectUrl[currentProjectRef.current])
             props.setLeavePage(false)
         }, "400");
       }, "320");

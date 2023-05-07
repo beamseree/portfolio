@@ -19,12 +19,6 @@ const ProjectScroll = (props) => {
   var whoosh = new Audio(wooshSound);
   whoosh.volume = 0.1;
 
-
-  useEffect(() => {
-    console.log(currentItemRef.current)
-    window.scrollTo(0, 0);
-  }, [])
-
   useEffect(() => {
     currentItemRef.current = currentItem;
   }, [currentItem]);
@@ -61,11 +55,11 @@ const ProjectScroll = (props) => {
               const tempYaw = ((70/textRefs.current.length))
               props.setYaw(230+(tempYaw*i))
               textRefs.current[i].classList.add('selected')
-            }, 145);
+            }, 205);
           }
         }
       }, 400);
-    }, 500); // 100ms delay
+    }, 700); // 100ms delay
   };
 
   const stopScrollHandler = () => {

@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import logo from "./images/bemologo.svg";
 import { useLocation } from "react-router-dom"
 import Asos from "./projects/Asos/Asos";
+import Nav from "./components/Nav";
 
 function App() {
   const textItems = ["ABOUT", "PROJECTS", "CONTACT"];
@@ -34,6 +35,8 @@ function App() {
 
   return (
     <Router>
+      <Nav />
+
       {didEnter && showNav && (
         <Scroll
           textItems={textItems}
