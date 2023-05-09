@@ -8,7 +8,7 @@ import bnw from "../images/room2.png";
 import ProjectScroll from "../components/ProjectScroll";
 
 const Projects = (props) => {
-    const [isFading, setIsFading] = useState(false);
+    const [isFading, setIsFading] = useState(true);
     const [isChoosing, setIsChoosing] = useState(false);
 
     const [currentProject, setCurrentProject] = useState(0);
@@ -102,8 +102,8 @@ const Projects = (props) => {
         window.scrollTo(0, 0);
 
         setTimeout(() => {
-            setIsFading(false);
-        }, "600");
+          setIsFading(false);
+        }, 700);
 
         buttonRef.current.addEventListener("mousemove", (e) => {
             const x = e.offsetX;
