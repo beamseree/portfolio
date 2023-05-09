@@ -35,11 +35,13 @@ const Nav = (props) => {
     const handleNav = (path) => {
         setIsOpen(false);
         props.setSideCover(false)
+        window.scrollTo(0, 0);
         navigate("/" + path);
     };
 
     const handleLogo = () => {
         window.scrollTo(0, 0);
+        props.setSideCover(false)
         navigate("/about");
     };
 
