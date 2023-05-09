@@ -2,6 +2,17 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    transition: opacity 500ms ease;
+}
+
+.main-container.preserve {
+  overflow-y: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.main-container.auto {
+  height: auto;
 }
 
 .home-container {
@@ -20,7 +31,6 @@
 
 .main-container.fade {
   opacity: 0;
-  transition: all 400ms ease-in 200ms;
 }
 
 .intro-overlay {

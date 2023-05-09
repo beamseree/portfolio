@@ -1,0 +1,104 @@
+.contact-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 700px;
+    transform-style: preserve-3d;
+}
+
+.contact-content {
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    column-gap: 25px;
+    padding: 40px 40px;
+    background: rgba(0, 0, 0, 0.2);
+     backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px); 
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.contact-left,
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    /* border: red 1px solid; */
+    row-gap: 10px;
+    pointer-events: none;
+}
+
+.contact-right {
+    align-items: start;
+}
+
+.contact-info {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.25s ease;
+}
+
+.contact-info:hover {
+    transform: translateX(10px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+
+.contact-left-top,
+.contact-right-top {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.contact-left-bottom {
+    width: 200px;
+}
+
+.contact-right-bottom {
+    margin-top: 3px;
+    pointer-events: all;
+}
+
+.contact-right-top {
+    margin-top: -10px;
+}
+
+.contact-title {
+    color: white;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.hello {
+    font-size: 4rem;
+    font-family: NeueMontreal-L;
+    color: white;
+    font-style: italic;
+}
+
+.look-forward {
+    color: white;
+    font-size: 1rem;
+    text-align: end;
+}
+
+.shadow {
+    height: 200px;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    position: absolute;
+    bottom: -120px;
+    z-index: 10;
+    left: 50vw;
+    transform: translateX(-50%) rotatex(70deg) skewY(5deg);
+}

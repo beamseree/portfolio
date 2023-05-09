@@ -35,12 +35,14 @@ const ProjectScroll = (props) => {
 
     // Set isScrolling to true
     setIsScrolling(true);
+    props.setIsChoosing(true);
     stopScrollHandler();
 
     // Set a timeout to detect when the scrolling has stopped
     window.scrollTimeout = setTimeout(() => {
       setIsScrolling(false);
       scrollToItem(currentItemRef.current)
+      console.log("Scrolling has stopped.");
       setTimeout(() => {
         for (let i = 0; i < textRefs.current.length; i++) {
           if (!textRefs.current[i] && !textRefs.current[i].classList) {return;}
@@ -53,7 +55,6 @@ const ProjectScroll = (props) => {
               props.setIsChoosing(false);
               
               const tempYaw = ((70/textRefs.current.length))
-              props.setYaw(230+(tempYaw*i))
               textRefs.current[i].classList.add('selected')
             }, 205);
           }
@@ -121,19 +122,16 @@ const ProjectScroll = (props) => {
         onEnterBack: () => onEnterText(index),
         onLeave: () =>
           gsap.to(textRefs.current[index], {
-            color: "white",
+            color: "#d1d1d1",
             duration: 0,
-            opacity: 0.5,
             fontFamily: "NeueMontreal-L",
           }),
         onLeaveBack: () =>
           gsap.to(textRefs.current[index], {
-            color: "white",
+            color: "#d1d1d1",
             duration: 0,
-            opacity: 0.5,
             fontFamily: "NeueMontreal-L",
           }),
-        //   markers: true, // Remove this line if you don't want to see the markers
       });
     });
 
