@@ -8,7 +8,7 @@ import bnw from "../images/room2.png";
 import ProjectScroll from "../components/ProjectScroll";
 
 const Projects = (props) => {
-    const [isFading, setIsFading] = useState(true);
+    const [isFading, setIsFading] = useState(false);
     const [isChoosing, setIsChoosing] = useState(false);
 
     const [currentProject, setCurrentProject] = useState(0);
@@ -16,8 +16,6 @@ const Projects = (props) => {
 
     const [projectSub, setProjectSub] = useState("Projects");
     const [projectCat, setProjectCat] = useState("Website");
-
-    const [comingSoon, setComingSoon] = useState(false);
 
     useEffect(() => {
         currentProjectRef.current = currentProject;
@@ -148,7 +146,6 @@ const Projects = (props) => {
                 hideColor={hideColor}
                 setCurrentProject={setCurrentProject}
                 setIsChoosing={setIsChoosing}
-                setComingSoon={setComingSoon}
             />
 
             <div
