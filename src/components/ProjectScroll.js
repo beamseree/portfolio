@@ -42,7 +42,6 @@ const ProjectScroll = (props) => {
     window.scrollTimeout = setTimeout(() => {
       setIsScrolling(false);
       scrollToItem(currentItemRef.current)
-      console.log("Scrolling has stopped.");
       setTimeout(() => {
         for (let i = 0; i < textRefs.current.length; i++) {
           if (!textRefs.current[i] && !textRefs.current[i].classList) {return;}

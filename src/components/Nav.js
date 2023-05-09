@@ -38,9 +38,14 @@ const Nav = (props) => {
         navigate("/" + path);
     };
 
+    const handleLogo = () => {
+        window.scrollTo(0, 0);
+        navigate("/about");
+    };
+
     return (
         <div className={`nav ${black && "black"}`}>
-            <img src={logo} alt="" className="logo" />
+            <img src={logo} alt="" className="logo" onClick={() => handleLogo()} />
 
             <div
                 className={`nav-menu-button ${isOpen && "open"}`}
